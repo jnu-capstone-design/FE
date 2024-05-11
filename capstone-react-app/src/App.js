@@ -1,23 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header';
+import Category from './components/categories';
+import Foodinfo from './components/foodInfo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='categories'>
+        <Category icon='🍚' name='한식'/>
+        <Category icon='🍔' name='버거'/>
+        <Category icon='🥟' name='중식'/>
+        <Category icon='🍗' name='치킨'/>
+        <Category icon='🍣' name='돈까스/일식'/>
+        <Category icon='🍰' name='카페/디저트'/>
+        <Category icon='🍕' name='피자'/>
+        <Category icon='🍲' name='찜/탕'/>
+        <Category icon='🍜' name='분식'/>
+        <Category icon='🥗' name='샐러드'/>
+        <Category icon='🍖' name='족발/보쌈'/>
+        <Category icon='🍝' name='양식'/>
+      </div>
+      <div className="specialPriceArea">
+        <div className="specialPrice">
+          <h3 className="specialTitle">특가세일</h3>
+        </div>
+        <div className="foodinfo-container">
+          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
+          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
+          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
+        </div>
+      </div>
+      <div className="recommendArea">
+        <div className="recommendPrice">
+          <h3 className="recommendTitle">추천매장</h3>
+        </div>
+        <div className="foodinfo-container">
+          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
+          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
+          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
+        </div>
+      </div>
     </div>
   );
 }

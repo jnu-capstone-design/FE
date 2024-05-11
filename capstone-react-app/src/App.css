@@ -1,38 +1,35 @@
 .App {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  margin-top: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.specialPrice {
+  width: 95%; /* 특가세일 섹션위치잡기 어려워서 일단 이렇게 설정*/
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.foodinfo-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  gap: 100px; /* 요소들 사이의 간격 */
 }
 
-.App-link {
-  color: #61dafb;
+.recommendPrice{
+  width: 95%; /* 이것도 위치잡기 어려워서 일단 해둠 */
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*두번째 추천매장 요소들도 일단 재활용했음*/
