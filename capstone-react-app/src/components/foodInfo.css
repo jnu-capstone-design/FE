@@ -1,0 +1,33 @@
+.area2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ddd; /* 경계선 추가 */
+    padding: 20px;
+    border-radius: 10px; /* 경계선의 모서리를 둥글게 */
+  }
+  
+  .picture img {
+    width: 150px; /* 이미지 크기 조정 */
+    height: auto; /* 이미지 높이를 자동으로 설정하여 비율 유지 */
+    margin-bottom: 10px; /* 이름과의 간격 */
+  }
+  
+  .name h3, .price h3, .percent h3, .price2 h3 {
+    margin: 5px 0; /* 요소들 사이의 간격 */
+  }
+  
+  .price h3 {
+    color: grey; /* 가격의 글자색 */
+  }
+  
+  .percent h3 {
+    color: orange; /* 할인율의 글자색 */
+    display: inline-block; /* 옆으로 배치 */
+    margin-left: 5px; /* price 요소와의 간격 */
+  }
+  
+  .comments h4 {
+    font-style: italic; /* 댓글 스타일 */
+  }
