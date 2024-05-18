@@ -4,7 +4,7 @@ import Products from './routes/Products';
 import Surrounds from './routes/Surrounds';
 import Discount from './routes/Discount';
 import CreateAccount from './routes/CreateAccount';
-import SignUp from './routes/signUp';
+import SignUp from './routes/SignUp';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
