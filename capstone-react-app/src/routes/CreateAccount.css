@@ -1,0 +1,100 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.input_data {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.userType, .userGender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 48%;
+}
+
+.userType button, .userGender button {
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 5px 50px;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.userType .active, .userGender .active {
+    background-color: orangered;
+    color: #fff;
+}
+
+.userType h4, .userGender h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.row label {
+    position: relative;
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
+.row label:last-child {
+    margin-right: 0;
+}
+
+.row input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 16px;
+    width: 100%;
+    background: none;
+}
+
+.row input:focus {
+    outline: none;
+    border-bottom: 2px solid orangered;
+}
+
+.row label span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #aaa;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.row input:focus + span,
+.row input:not(:placeholder-shown) + span {
+    top: -20px;
+    font-size: 12px;
+    color: orangered;
+}

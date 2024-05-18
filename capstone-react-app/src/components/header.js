@@ -22,15 +22,15 @@ const Header = () => {
         <Link to="/surrounds" className="surround">내 주변</Link>
         <Link to="/discount" className="discount">특가세일</Link>
         <div className="search">
-          <input type="text"></input>
-          <button>검색</button>
+          <input className="header_input" type="text"></input>
+          <button className="header_button">검색</button>
         </div>
         <div className="profile-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <img className="profile" alt="profile not found" src="profile.png"/>
           {dropDown && (
             <div className="dropdown">
               <Link to="/signUp" className="dropdown-link">로그인</Link>
-              <Link to="/createAccount" className="dropdown-link">회원가입</Link>
+              <Link to="/CreateAccount" className="dropdown-link">회원가입</Link>
             </div>
           )}
         </div>
