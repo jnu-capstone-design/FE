@@ -1,47 +1,22 @@
 import './App.css';
-import Header from './components/header';
-import Category from './components/categories';
-import Foodinfo from './components/foodInfo';
+import Home from './routes/Home';
+import Products from './routes/Products';
+import Surrounds from './routes/Surrounds';
+import Discount from './routes/Discount';
+import CreateAccount from './routes/CreateAccount';
+import SignUp from './routes/SignUp';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <div className='categories'>
-        <Category icon='🍚' name='한식'/>
-        <Category icon='🍔' name='버거'/>
-        <Category icon='🥟' name='중식'/>
-        <Category icon='🍗' name='치킨'/>
-        <Category icon='🍣' name='돈까스/일식'/>
-        <Category icon='🍰' name='카페/디저트'/>
-        <Category icon='🍕' name='피자'/>
-        <Category icon='🍲' name='찜/탕'/>
-        <Category icon='🍜' name='분식'/>
-        <Category icon='🥗' name='샐러드'/>
-        <Category icon='🍖' name='족발/보쌈'/>
-        <Category icon='🍝' name='양식'/>
-      </div>
-      <div className="specialPriceArea">
-        <div className="specialPrice">
-          <h3 className="specialTitle">특가세일</h3>
-        </div>
-        <div className="foodinfo-container">
-          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
-          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
-          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
-        </div>
-      </div>
-      <div className="recommendArea">
-        <div className="recommendPrice">
-          <h3 className="recommendTitle">추천매장</h3>
-        </div>
-        <div className="foodinfo-container">
-          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
-          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
-          <Foodinfo picture='logo192.png' name='[외할머니댁] 얼큰 소고기 버섯탕' price='13900원' percent='50%' price2='6950원' comments='댓글31개' />
-        </div>
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/products" element={<Products />}/>
+      <Route path="/surrounds" element={<Surrounds />}/>
+      <Route path="/discount" element={<Discount />}/>
+      <Route path="/CreateAccount" element={<CreateAccount />}/>
+      <Route path="/signUp" element={<SignUp/>}/>
+    </Routes>
   );
 }
 

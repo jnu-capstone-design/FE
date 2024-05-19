@@ -30,4 +30,35 @@
 .surround,
 .discount{
     font-size: 20px;
+    color: black;
+    text-decoration: none;
 }
+
+.products:hover,
+.surround:hover,
+.discount:hover{
+    background-color: lightgrey;
+    /* hover스타일 임시로 구현 */
+}
+
+.profile{
+    color:black;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px grey;
+  }
+  
+  .dropdown-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-link:hover {
+    background-color: #f1f1f1;
+  }
