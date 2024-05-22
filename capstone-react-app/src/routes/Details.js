@@ -21,7 +21,7 @@ function Details() {
           <p className='stock'>재고 : 3개</p>
           <Button text='예약'/>
         </div>
-        <>
+        <div className='reviewArea'>
           <div className='reviewHeader'>
             <h3>상품 리뷰</h3>
           </div>
@@ -40,7 +40,7 @@ function Details() {
               <img className='reviewImg' src='logo192.png'/>
             </div>
           </div>
-        </>
+        </div>
       </div>
     </div>
   );
