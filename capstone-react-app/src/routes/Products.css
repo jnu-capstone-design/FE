@@ -1,0 +1,16 @@
+.userControl {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.buttonSection {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 15px;
+}
+
+.Sort {
+    display: flex;
+    align-items: center;
+}

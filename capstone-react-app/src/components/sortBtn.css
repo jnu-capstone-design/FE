@@ -1,0 +1,19 @@
+.sort_btn button {
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sort_btn button:hover {
+    color: #007bff;
+}
+
+.sort_btn button:not(:last-child)::after {
+    content: "ㅣ";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
