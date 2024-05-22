@@ -3,8 +3,8 @@ import Home from './routes/Home';
 import Products from './routes/Products';
 import Surrounds from './routes/Surrounds';
 import Discount from './routes/Discount';
-import CreateAccount from './routes/CreateAccount';
-import SignUp from './routes/SignUp';
+import CreateAccount from './routes/createAccount';
+import SignUp from './routes/signUp';
 import Details from './routes/Details';
 import { Routes, Route } from 'react-router-dom';
 
