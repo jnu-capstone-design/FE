@@ -34,16 +34,15 @@
 }
 
 .percent {
-  float: left;
+  display: inline-block; /* 옆으로 배치 */
   font-size: 20px;
   color: orangered; /* 할인율의 글자색 */
-  display: inline-block; /* 옆으로 배치 */
   margin-right: 5px; /* price 요소와의 간격 */
   font-weight: bolder;
 }
 
 .saleprice {
-  float: left;
+  display: inline-block;
   font-size: 20px;
   font-weight: bolder;
 }
