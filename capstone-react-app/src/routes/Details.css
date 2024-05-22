@@ -1,57 +1,47 @@
+.detailArea {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+}
+
 .foodImg {
-  float: left;
-  text-align: center;
   width: 500px;
   height: auto;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬*/
+  align-items: center; /* 수직 가운데 정렬 */
+  padding: 20px;
 }
 
 .foodDetail {
-  float: left;
-  vertical-align: top;
   width: 500px;
-  height: auto;
-  margin: 20px;
+  padding: 20px;
 }
 
-.foodDetail p {
+.foodDetail p, h2 {
   margin-bottom: 10px;
 }
 
+.originalPrice {
+  display: inline-block;
+  margin-left: 5px;
+  color: grey;
+  text-decoration-line: line-through; /* price 취소선 */
+}
+
 .stock {
-  clear: left;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.reviewArea {
+  width: 1000px;
+  margin: 0 auto; /* 상품 리뷰 중앙 정렬 */
+  justify-content: center;
 }
 
 .reviewHeader {
-  width: auto;
   margin: 20px;
   padding: 20px;
   border-bottom: 1px solid;
   clear: both;
-}
-
-.reviewList {
-  display: flex;
-  width: auto;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 10px;
-  border-bottom: 1px solid lightgray;
-}
-
-.comment {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.comment p {
-  margin-left: 20px;
-}
-
-.reviewImg {
-  width: 100px;
-  margin-left: auto;
 }

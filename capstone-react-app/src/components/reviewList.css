@@ -1,0 +1,26 @@
+.review_list {
+  display: flex;
+  /* width: auto; */
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray; 
+}
+
+.reviewContents {
+  padding: 10px;
+}
+
+.reviewTitle{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.reviewTitle p {
+  margin-left: 20px;
+}
+
+.reviewPhoto {
+  width: 100px;
+  margin-left: auto;
+}
