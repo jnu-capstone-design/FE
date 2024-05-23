@@ -16,7 +16,7 @@ const Header = () => {
     <header>
       <div className="header">
         <Link to="/">
-          <img className="logo" alt="logo not found" src="logo192.png"/>
+          <img className="logo" alt="logo not found" src="MainLogo.png"/>
         </Link>
         <Link to="/products" className="products">전체상품</Link>
         <Link to="/surrounds" className="surround">내 주변</Link>
@@ -26,7 +26,7 @@ const Header = () => {
           <button className="header_button">검색</button>
         </div>
         <div className="profile-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          <img className="profile" alt="profile not found" src="profile.png"/>
+          <img className="profile" alt="profile not found" src="Profile.png"/>
           {dropDown && (
             <div className="dropdown">
               <Link to="/signUp" className="dropdown-link">로그인</Link>
