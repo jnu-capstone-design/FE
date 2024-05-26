@@ -6,7 +6,7 @@ function SignUp(){
         <div>
             <Header />
             <div className="login_section">
-                <img className="logo" alt="logo not found" src="logo192.png"/>
+                <img className="logo" alt="logo not found" src="MainLogo.png"/>
                 <label>
                     <input type="text" name="id" placeholder=" " required />
                     <span>📧아이디를 입력해주세요</span>
