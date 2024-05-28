@@ -1,13 +1,13 @@
 import React from 'react';
 import './categories.css';
 
-const Category = ({icon,name}) => {
+const Category = ({ icon, name }) => {
   return (
     <div className="area">
-        <div className="cate1">
-          <div className="div10">{icon}</div>
-          <div className="div11">{name}</div>
-        </div>
+      <button className="cate1">
+        <div className="div10">{icon}</div>
+        <div className="div11">{name}</div>
+      </button>
     </div>
   );
 }
