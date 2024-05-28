@@ -6,7 +6,7 @@
 }
 
 .header > * {
-    margin-right: 150px; /* 각 요소들의 오른쪽 마진 */
+    margin-right: 120px; /* 각 요소들의 오른쪽 마진 */
 }
 
 .header > *:last-child {
