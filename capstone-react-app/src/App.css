@@ -1,3 +1,11 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* 임시로 400 */
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
 /* 현재 Home.css 안만들고 이곳에 정의됨 */
 .App {
   display:flex;
