@@ -6,9 +6,17 @@
     width: 100px;
     height: 100px;
     border-radius: 20px;
+    border: none;
     background-color: lightgray;
     margin-right: 10px;
     margin-bottom: 20px;
     text-align: center;
     font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cate1:hover {
+    background-color: gray;
+    transform: scale(1.05);
 }
