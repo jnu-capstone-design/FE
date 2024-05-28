@@ -28,17 +28,24 @@
 
 .products,
 .surround,
-.discount{
+.discount {
     font-size: 20px;
     color: black;
+    font-weight: 600;
     text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .products:hover,
 .surround:hover,
-.discount:hover{
+.discount:hover {
     background-color: lightgrey;
-    /* hover스타일 임시로 구현 */
+    color: white;
+    transform: scale(1.05); /* 크기 확대 효과 */
 }
 
 .profile{
