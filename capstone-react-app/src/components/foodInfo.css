@@ -9,7 +9,12 @@
     border: 1px solid #ddd; /* 경계선 추가 */
     padding: 20px;
     border-radius: 10px; /* 경계선의 모서리를 둥글게 */
-  }
+}
+
+.area2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
   
 .picture img {
   width: 200px; /* 이미지 크기 조정 */
