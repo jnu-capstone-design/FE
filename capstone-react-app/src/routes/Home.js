@@ -23,7 +23,7 @@ function Home(){
           </div>
           <div className="specialPriceArea">
             <div className="specialPrice">
-              <h3 className="specialTitle">특가세일</h3>
+              <h2 className="specialTitle">특가세일</h2>
             </div>
             <div className="foodinfo-container">
               <Link to="/Details" className="details">
@@ -42,7 +42,7 @@ function Home(){
           </div>
           <div className="recommendArea">
             <div className="recommendPrice">
-              <h3 className="recommendTitle">추천매장</h3>
+              <h2 className="recommendTitle">추천매장</h2>
             </div>
             <div className="foodinfo-container">
               <Link to="/Details" className="details">
