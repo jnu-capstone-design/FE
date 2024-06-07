@@ -1,16 +1,64 @@
 .userControl {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 30px;
 }
 
-.buttonSection {
+/* .buttonSection {
     display: grid;
     grid-template-columns: repeat(6, auto);
-    gap: 15px;
-}
+} */
 
 .Sort {
     display: flex;
     align-items: center;
 }
+
+.tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-item {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .tab-item li {
+      margin: 0 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+      background-color: #f1f1f1;
+      flex: 1;
+      max-width: 130px;
+      box-sizing: border-box;
+  }
+  
+  .tab-item li.is-active {
+    background-color: #FFF5EE;
+    border-color: orangered;
+  }
+  
+  .tab-item li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .tab-content div {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
