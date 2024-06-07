@@ -1,10 +1,13 @@
 import Header from '../components/header';
-import Button from '../components/button';
 import ReviewList from '../components/reviewList';
+import Reservation from '../components/reservation';
 import '../components/foodInfo.css'
 import './Details.css';
+import { useState } from 'react';
 
 function Details() {
+  let [resinfo, setResinfo] = useState(false);
+
   return(
     <div>
       <Header/>
@@ -19,7 +22,10 @@ function Details() {
           <p className='saleprice'>6950원</p>
           <p className='originalPrice'>13900원</p>
           <p className='stock'>재고 : 3개</p>
-          <Button text='예약'/>
+          <button className='resButton' onClick={()=>{setResinfo(!resinfo)}}>
+            <p className='resText'>예약</p>
+            {resinfo == true ? <Reservation store='외할머니댁' hours='9:00 - 20:00' phone='010-0000-0000' address='대한민국'/> : null}
+          </button>
         </div>
       </div>
       <div className='reviewArea'>

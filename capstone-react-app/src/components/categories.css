@@ -11,12 +11,21 @@
     margin-right: 10px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
+.div10 {
+    font-size: 36px;
+}
+
+.div11 {
+    font-size: 16px;
+}
+
 .cate1:hover {
-    background-color: gray;
+    background-color: white;
+    color: orangered;
+    border : 1px solid orangered;
     transform: scale(1.05);
 }

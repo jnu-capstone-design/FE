@@ -6,6 +6,7 @@ import Discount from './routes/Discount';
 import CreateAccount from './routes/CreateAccount';
 import SignUp from './routes/SignUp';
 import Details from './routes/Details';
+import MyPage from './routes/MyPage';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/CreateAccount" element={<CreateAccount />}/>
       <Route path="/signUp" element={<SignUp/>}/>
       <Route path="/details" element={<Details />}/>
+      <Route path="/mypage" element={<MyPage />}/>
     </Routes>
   );
 }

@@ -1,12 +1,15 @@
 import Header from '../components/header';
 import './SignUp.css';
+import { Link } from 'react-router-dom';
 
 function SignUp(){
     return (
         <div>
             <Header />
             <div className="login_section">
-                <img className="logo" alt="logo not found" src="logo192.png"/>
+                <Link to="/">
+                    <img className="logo" alt="logo not found" src="MainLogo.png"/>
+                </Link>
                 <label>
                     <input type="text" name="id" placeholder=" " required />
                     <span>📧아이디를 입력해주세요</span>

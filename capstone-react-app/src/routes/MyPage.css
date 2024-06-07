@@ -1,0 +1,49 @@
+.userInfo {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+}
+
+.tabs {
+  width: 60%;
+	margin: 0 auto;
+}
+
+.blockTab {
+  display: flex;
+  margin: 10px;
+	padding: 0px;
+  background: white;
+}
+
+.activeTab {
+  background: lightblue;
+  margin: 10px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.inactiveTab {
+  background: none;
+	display: inline-block;
+	margin: 10px;
+	cursor: pointer;
+  border: 1px solid lightgray;
+}
+
+.contentTab {
+  width: 100%;
+	background: rgb(48, 148, 123);
+  border-top : 1px solid rgb(170, 166, 166);
+	padding: 15px;
+}
+
+.activeContent {
+  display: block;
+  background: #ededed;
+}
+
+.inactiveContent {
+  display: none;
+	background: white;
+}

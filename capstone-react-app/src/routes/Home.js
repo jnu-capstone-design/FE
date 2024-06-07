@@ -23,9 +23,12 @@ function Home(){
           </div>
           <div className="specialPriceArea">
             <div className="specialPrice">
-              <h3 className="specialTitle">특가세일</h3>
+              <h2 className="specialTitle">특가세일</h2>
             </div>
             <div className="foodinfo-container">
+              <Link to="/Details" className="details">
+                <Foodinfo picture='logo192.png' store='외할머니댁' food='얼큰 소고기 버섯탕' price='13900원' percent='50%' saleprice='6950원' comments='댓글 31개' />
+              </Link>
               <Link to="/Details" className="details">
                 <Foodinfo picture='logo192.png' store='외할머니댁' food='얼큰 소고기 버섯탕' price='13900원' percent='50%' saleprice='6950원' comments='댓글 31개' />
               </Link>
@@ -39,9 +42,12 @@ function Home(){
           </div>
           <div className="recommendArea">
             <div className="recommendPrice">
-              <h3 className="recommendTitle">추천매장</h3>
+              <h2 className="recommendTitle">추천매장</h2>
             </div>
             <div className="foodinfo-container">
+              <Link to="/Details" className="details">
+                <Foodinfo picture='logo192.png' store='외할머니댁' food='얼큰 소고기 버섯탕' price='13900원' percent='50%' saleprice='6950원' comments='댓글 31개' />
+              </Link>
               <Link to="/Details" className="details">
                 <Foodinfo picture='logo192.png' store='외할머니댁' food='얼큰 소고기 버섯탕' price='13900원' percent='50%' saleprice='6950원' comments='댓글 31개' />
               </Link>
