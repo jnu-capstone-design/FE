@@ -3,14 +3,9 @@
     margin: 30px;
 }
 
-/* .buttonSection {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-} */
-
 .Sort {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .tabs {
@@ -54,11 +49,4 @@
   .tab-content {
     margin-top: 20px;
     width: 100%;
-  }
-  
-  .tab-content div {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fafafa;
   }

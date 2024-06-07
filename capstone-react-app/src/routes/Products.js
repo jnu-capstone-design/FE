@@ -1,12 +1,11 @@
 import Header from '../components/header';
 import SortButton from '../components/sortBtn';
-import Foodinfo from '../components/foodInfo';
-import { Link } from 'react-router-dom';
+import FoodContainer from '../components/foodcontainer';
 import { useState } from 'react';
 import './Products.css';
 
 function Products(){
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(null);
 
     const tabClickHandler = (index) => {
         setActiveIndex(index);
@@ -17,7 +16,7 @@ function Products(){
         '피자', '찜/탕', '분식', '샐러드', '족발/보쌈', '양식'
     ];
     
-    const tabContents = tabs.map((tab, i) => '여기에 ' + tab + '의 내용을 작성합니다.');
+    const tabContents = tabs.map((tab, i) => <FoodContainer/>);
 
     return(
         <div>
@@ -54,21 +53,9 @@ function Products(){
                             )
                         ))}
                     </div>
+                    {/* 전체상품 */}
+                    {activeIndex == null ? <FoodContainer/> : null}
                 </div>
-            </div>
-            <div className='ProductSection'>
-                <Link to="/Details" className="details">
-                    <Foodinfo picture='logo192.png' store='외할머니댁' food='얼큰 소고기 버섯탕' price='13900원' percent='50%' saleprice='6950원' comments='댓글 31개' />
-                </Link>
-                <Link to="/Details" className="details">
-                    <Foodinfo picture='logo192.png' store='외할머니댁' food='얼큰 소고기 버섯탕' price='13900원' percent='50%' saleprice='6950원' comments='댓글 31개' />
-                </Link>
-                <Link to="/Details" className="details">
-                    <Foodinfo picture='logo192.png' store='외할머니댁' food='얼큰 소고기 버섯탕' price='13900원' percent='50%' saleprice='6950원' comments='댓글 31개' />
-                </Link>
-                <Link to="/Details" className="details">
-                    <Foodinfo picture='logo192.png' store='외할머니댁' food='얼큰 소고기 버섯탕' price='13900원' percent='50%' saleprice='6950원' comments='댓글 31개' />
-                </Link>
             </div>
         </div>
     );
