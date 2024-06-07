@@ -1,5 +1,4 @@
 import Header from '../components/header';
-import Button from '../components/button';
 import ReviewList from '../components/reviewList';
 import Reservation from '../components/reservation';
 import '../components/foodInfo.css'
